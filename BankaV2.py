@@ -3,6 +3,7 @@ import time
 
 bakiye = 0
 
+# Personel Account
 def Musteri():
     Tc = "2"
     password = "2"
@@ -12,13 +13,13 @@ def Musteri():
         print("Bilgiler Yanlis..! Tekrar deneyin")
         quit()
 
-
+# Show Amount
 def bakiyeGoster():
     global bakiye
     print("Bakiyeniz :",bakiye)
     time.sleep(3.0)
 
-
+# Add Money
 def ParaYatir():
     global bakiye
     paraYatir = int(input("Ne kadar Yatirmak istiyorsunuz? :"))
@@ -33,7 +34,7 @@ def ParaYatir():
         print("Hesabiniza",paraYatir,"TL Yatirildi.. Guncel bakiyeniz :",bakiye)
         time.sleep(3.0)
 
-
+# withdraw Money
 def ParaCek():
     global bakiye
     paraCek = int(input("Ne kadar cekmek istiyorsunuz? :"))
@@ -50,11 +51,11 @@ def ParaCek():
         bakiye -= paraCek
         print("Hesabinizdan",paraCek,"TL Cektiniz.. Guncel bakiyeniz :",bakiye)
         time.sleep(3.0)
-
+# Quit
 def Cikis():
     quit()
 
-
+# Mother Program
 Musteri()
 
 
